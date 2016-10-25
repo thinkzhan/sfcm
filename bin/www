@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var pkg = require('../package.json');
+
+program.version(pkg.version)
+	.option('-p, --port <n>', 'port the server use, default 3000', parseInt)
+	.parse(process.argv);
+
+require('../lib/start').run({
+	port: program.port || 3000
+});
