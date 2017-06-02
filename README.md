@@ -1,14 +1,14 @@
-##desc
+## desc
    static server by koa
 
-##usage
-####1 全局
+## usage
+#### 1 全局
 `npm install -g sfcm`
 ```
 cm
 ```
 
-####2 引用
+#### 2 引用
 `npm install sfcm`
 
 ```
@@ -17,7 +17,7 @@ require('sfcm').run({
 });
 ```
 
-##args
+## args
 `cm -p 3000`
 
 
